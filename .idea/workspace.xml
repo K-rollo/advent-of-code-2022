@@ -4,36 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca6cee92-0316-4b58-a7b1-c22b2d9b53eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day01/Elf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day01/ElfSearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day01/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day02/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day02/GameResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day02/GamesRegister.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day02/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day02/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day03/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day03/Rucksack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day03/RucksackTriple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day03/RucksacksList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/day-1-input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/day-2-input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/day-3-input.txt" afterDir="false" />
+    <list default="true" id="ca6cee92-0316-4b58-a7b1-c22b2d9b53eb" name="Changes" comment="Initial commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/day04/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day04/PairsManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day05/DataFileReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day05/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day05/Move.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day05/MoveManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day05/StackCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day05/StackManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day05/StackOfCrates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/day-4-input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/day-5-input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,19 +45,21 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2RQZRjAqvT6LjksMuus5aLgznnJ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.16913123"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.16913123&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="day03" />
@@ -83,20 +69,7 @@
       <recent name="C:\Users\Karol\IdeaProjects\_2023_trainings_and_projects\advent-of-code\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.day03.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pl.karolkoduje.Main" />
-      <module name="advent-of-code.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.karolkoduje.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.day05.Main">
     <configuration name="day01.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="day01.Main" />
       <module name="advent-of-code.main" />
@@ -136,12 +109,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="day04.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day04.Main" />
+      <module name="advent-of-code.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day04.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="day05.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day05.Main" />
+      <module name="advent-of-code.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day05.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.day05.Main" />
+        <item itemvalue="Application.day04.Main" />
         <item itemvalue="Application.day03.Main" />
         <item itemvalue="Application.day02.Main" />
         <item itemvalue="Application.day01.Main" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -154,6 +154,14 @@
       <option name="presentableId" value="Default" />
       <updated>1687184260852</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1687219626527</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1687219626528</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -166,6 +174,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -181,9 +193,19 @@
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/day03/RucksacksList.java</url>
-          <line>62</line>
-          <option name="timeStamp" value="16" />
+          <url>file://$PROJECT_DIR$/src/main/java/day04/PairsManager.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/day05/Main.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/day05/Main.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/day02/Main.java</url>
