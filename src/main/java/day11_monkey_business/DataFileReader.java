@@ -3,6 +3,7 @@ package day11_monkey_business;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.math.BigDecimal;
+import java.math.BigInteger;
 import java.util.*;
 
 public class DataFileReader {
@@ -31,20 +32,21 @@ public class DataFileReader {
                 var monkeyNumber = Integer.parseInt(monkeyNumberAsChar);
 
                 // decoding items
-                var itemsWorryLevelsAsString = readLineItemsNumbers.substring(18);
-                var itemsWorryLevelsAsStringsArray = itemsWorryLevelsAsString.split(", ");
-                List<BigDecimal> itemsWorryLevelsAsLongs = new ArrayList<>();
+                if (readLineItemsNumbers.length() > 17) {
+                    var itemsWorryLevelsAsString = readLineItemsNumbers.substring(18);
+                    var itemsWorryLevelsAsStringsArray = itemsWorryLevelsAsString.split(", ");
+                    List<BigInteger> itemsWorryLevelsAsLongs = new ArrayList<>();
 
-                for (String str : itemsWorryLevelsAsStringsArray) {
-                    itemsWorryLevelsAsLongs.add(BigDecimal.valueOf(Long.parseLong(str)));
+                    for (String str : itemsWorryLevelsAsStringsArray)
+                        itemsWorryLevelsAsLongs.add(BigInteger.valueOf(Long.parseLong(str)));
+
+                    if (itemsWorryLevelsAsLongs.size() > 0) {
+                        for (BigInteger itemsWorryLevelsAsLong : itemsWorryLevelsAsLongs) {
+                            var localItem = new Item(itemNumber++, itemsWorryLevelsAsLong, monkeyNumber);
+                            listOfItems.add(localItem);
+                        }
+                    }
                 }
-
-                for (BigDecimal itemsWorryLevelsAsLong : itemsWorryLevelsAsLongs) {
-                    var localItem = new Item(itemNumber++, itemsWorryLevelsAsLong, monkeyNumber);
-                    listOfItems.add(localItem);
-                }
-
-
                 //decoding operation
                 OperationType operationType = OperationType.NOT_DEFINED;
                 var operationDetailsAsString = readLineOperationDetails.substring(23);
@@ -55,13 +57,13 @@ public class DataFileReader {
                     case '*' -> operationType = OperationType.MULTIPLICATION;
                     case '/' -> operationType = OperationType.DIVISION;
                 }
-                BigDecimal operationRatio = BigDecimal.valueOf(-1);
+                var operationRatio = BigInteger.valueOf(-1);
                 var operationRatioAsString = operationDetailsAsString.substring(2);
-                if (!operationRatioAsString.equals("old")) operationRatio = BigDecimal.valueOf(Integer.parseInt(operationRatioAsString));
+                if (!operationRatioAsString.equals("old")) operationRatio = BigInteger.valueOf(Integer.parseInt(operationRatioAsString));
 
                 // decoding division ratio
                 var divisionRatioAsString = readLineDivisionRatio.substring(21);
-                var divisionRatio = BigDecimal.valueOf(Long.parseLong(divisionRatioAsString));
+                var divisionRatio = BigInteger.valueOf(Long.parseLong(divisionRatioAsString));
 
                 // decoding monkey number if true
                 var monkeyIfTrueAsString = readLineMonkeyIfTrue.substring(29);

@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca6cee92-0316-4b58-a7b1-c22b2d9b53eb" name="Changes" comment="Solving tasks in progress. Day 6 completed. Day 7 gives wrong result.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/day11_monkey_business/DataFileReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day11_monkey_business/GameManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day11_monkey_business/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day11_monkey_business/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day11_monkey_business/Monkey.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day11_monkey_business/MonkeyManger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day11_monkey_business/OperationType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/day-11-input.txt" afterDir="false" />
+    <list default="true" id="ca6cee92-0316-4b58-a7b1-c22b2d9b53eb" name="Changes" comment="Solving tasks in progress. Day 11 step one completed.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day11_monkey_business/DataFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day11_monkey_business/DataFileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day11_monkey_business/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day11_monkey_business/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day11_monkey_business/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day11_monkey_business/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day11_monkey_business/Monkey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day11_monkey_business/Monkey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/day-11-input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/day-11-input.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687355661065</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Solving tasks in progress. Day 11 step one completed.">
+      <created>1687429719410</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1687429719410</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -197,7 +201,8 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Solving tasks in progress. Day 5 completed." />
     <MESSAGE value="Solving tasks in progress. Day 6 completed. Day 7 gives wrong result." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solving tasks in progress. Day 6 completed. Day 7 gives wrong result." />
+    <MESSAGE value="Solving tasks in progress. Day 11 step one completed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solving tasks in progress. Day 11 step one completed." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -241,6 +246,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/day11_monkey_business/Monkey.java</url>
           <line>41</line>
           <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/day11_monkey_business/GameManager.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/day11_monkey_business/DataFileReader.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="92" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/day02/Main.java</url>

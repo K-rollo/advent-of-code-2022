@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
 
         final String path = "src/main/resources/day-11-input.txt";
-        final int rounds = 1000;
+        final int rounds = 10000;
         var listOfMonkeys = DataFileReader.readFileAndGenerateMonkeyList(path);     // checked
         MonkeyManger monkeyManger = new MonkeyManger(listOfMonkeys);
         GameManager gameManager = new GameManager(monkeyManger, rounds);

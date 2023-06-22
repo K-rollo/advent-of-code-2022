@@ -1,12 +1,13 @@
 package day11_monkey_business;
 
 import java.math.BigDecimal;
+import java.math.BigInteger;
 
 public class Item {
     private int number;
-    private BigDecimal worryLevel;
+    private BigInteger worryLevel;
     private int monkeyNumber;
-    public Item(int number, BigDecimal worryLevel, int monkeyNumber) {
+    public Item(int number, BigInteger worryLevel, int monkeyNumber) {
         this.number = number;
         this.worryLevel = worryLevel;
         this.monkeyNumber = monkeyNumber;
@@ -18,10 +19,10 @@ public class Item {
     public void setNumber(int number) {
         this.number = number;
     }
-    public BigDecimal getWorryLevel() {
+    public BigInteger getWorryLevel() {
         return worryLevel;
     }
-    public void setWorryLevel(BigDecimal worryLevel) {
+    public void setWorryLevel(BigInteger worryLevel) {
         this.worryLevel = worryLevel;
     }
     public int getMonkeyNumber() {

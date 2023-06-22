@@ -1,6 +1,7 @@
 package day11_monkey_business;
 
 import java.math.BigDecimal;
+import java.math.BigInteger;
 import java.math.RoundingMode;
 import java.util.ArrayDeque;
 import java.util.List;
@@ -11,8 +12,8 @@ public class Monkey {
     private int number;
     private Queue<Item> queueOfItems = new ArrayDeque<>();
     private final OperationType operationType;
-    private final BigDecimal operationRatio;
-    private final BigDecimal divisionRatio;
+    private final BigInteger operationRatio;
+    private final BigInteger divisionRatio;
     private final int monkeyIfTrue;
     private final int monkeyIfFalse;
 
@@ -20,7 +21,7 @@ public class Monkey {
     private int itemsInspected;
 
 
-    public Monkey(int number, OperationType operationType, BigDecimal operationRatio, BigDecimal divisionRatio, int monkeyIfTrue, int monkeyIfFalse) {
+    public Monkey(int number, OperationType operationType, BigInteger operationRatio, BigInteger divisionRatio, int monkeyIfTrue, int monkeyIfFalse) {
         this.number = number;
         this.operationType = operationType;
         this.operationRatio = operationRatio;
@@ -47,18 +48,19 @@ public class Monkey {
                     currentWorryLevel = currentWorryLevel.subtract(operationRatio);
                 }
                 case MULTIPLICATION -> {
-                    if (operationRatio.equals(BigDecimal.valueOf(-1L))) {
+                    if (operationRatio.equals(BigInteger.valueOf(-1L))) {
                         currentWorryLevel = currentWorryLevel.multiply(currentWorryLevel);
                     } else {
                         currentWorryLevel = currentWorryLevel.multiply(operationRatio);
                     }
                 }
                 case DIVISION -> {
-                    currentWorryLevel = currentWorryLevel.divide(operationRatio, RoundingMode.HALF_EVEN);
+                    currentWorryLevel = currentWorryLevel.divide(operationRatio);
                 }
             }
 //            currentWorryLevel /= 3;
 //            currentWorryLevel = currentWorryLevel.divide(BigDecimal.valueOf(3), RoundingMode.DOWN);
+//            currentWorryLevel = currentWorryLevel.divide(BigInteger.valueOf(3));
             inspectedItem.setWorryLevel(currentWorryLevel);
 
             boolean isDivisible = isDivisible(currentWorryLevel, divisionRatio);
@@ -93,17 +95,17 @@ public class Monkey {
         System.out.println(" Inspected items: " + itemsInspected);
     }
 
-    public static boolean isDivisible(BigDecimal num1, BigDecimal num2) {
-        BigDecimal result = remainder(num1, num2);
-        return result.compareTo(BigDecimal.ZERO) == 0 ? true : false;
+    public static boolean isDivisible(BigInteger num1, BigInteger num2) {
+        BigInteger result = remainder(num1, num2);
+        return result.compareTo(BigInteger.ZERO) == 0;
     } /*from  w ww . j  a  va 2  s .  c  o m*/
 
-    public static BigDecimal remainder(BigDecimal num1, BigDecimal num2) {
-        if (null == num2 || BigDecimal.ZERO.compareTo(num2) == 0) {
+    public static BigInteger remainder(BigInteger num1, BigInteger num2) {
+        if (null == num2 || BigInteger.ZERO.compareTo(num2) == 0) {
             return null;
         }
-        if (null == num1 || BigDecimal.ZERO.compareTo(num1) == 0) {
-            return BigDecimal.ZERO;
+        if (null == num1 || BigInteger.ZERO.compareTo(num1) == 0) {
+            return BigInteger.ZERO;
         }
         return num1.remainder(num2);
     }
