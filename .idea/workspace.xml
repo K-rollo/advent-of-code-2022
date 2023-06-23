@@ -4,13 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca6cee92-0316-4b58-a7b1-c22b2d9b53eb" name="Changes" comment="Solving tasks in progress. Day 11 step one completed.">
+    <list default="true" id="ca6cee92-0316-4b58-a7b1-c22b2d9b53eb" name="Changes" comment="Solving tasks in progress. Day 11 step one completed. Step 2 stuck.&#10;&#10;Should be used different method to manage &quot;worry level&quot;. BigInteger is not enough.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/day12_hill_climbing/Climber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day12_hill_climbing/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day12_hill_climbing/graph/ConnectionsManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day12_hill_climbing/graph/GraphManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day12_hill_climbing/graph/NodesConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day12_hill_climbing/map/MapTransformationManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day12_hill_climbing/map/NodeOnMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day12_hill_climbing/map/Status.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day12_hill_climbing/preparation/CharacterDecryptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day12_hill_climbing/preparation/DataFileReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/day-12-input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day11_monkey_business/DataFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day11_monkey_business/DataFileReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day11_monkey_business/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day11_monkey_business/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day11_monkey_business/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day11_monkey_business/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day11_monkey_business/Monkey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day11_monkey_business/Monkey.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day-11-input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/day-11-input.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +33,8 @@
       <list>
         <option value="Interface" />
         <option value="Record" />
-        <option value="Enum" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -56,6 +62,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="day12_hill_climbing.graph" />
+      <recent name="day12_hill_climbing.map" />
       <recent name="day03" />
       <recent name="day02" />
     </key>
@@ -63,13 +71,13 @@
       <recent name="C:\Users\Karol\IdeaProjects\_2023_trainings_and_projects\advent-of-code\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.day11_monkey_business.Main">
+  <component name="RunManager" selected="Application.day07.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day06.Main" />
+      <option name="MAIN_CLASS_NAME" value="day12_hill_climbing.Main" />
       <module name="advent-of-code.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day06.*" />
+          <option name="PATTERN" value="day12_hill_climbing.map.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -135,7 +143,6 @@
         <item itemvalue="Application.day09.Main" />
         <item itemvalue="Application.day08.Main" />
         <item itemvalue="Application.day07.Main" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -183,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687429719410</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Solving tasks in progress. Day 11 step one completed. Step 2 stuck.&#10;&#10;Should be used different method to manage &quot;worry level&quot;. BigInteger is not enough.">
+      <created>1687434955241</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1687434955241</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -202,7 +216,8 @@
     <MESSAGE value="Solving tasks in progress. Day 5 completed." />
     <MESSAGE value="Solving tasks in progress. Day 6 completed. Day 7 gives wrong result." />
     <MESSAGE value="Solving tasks in progress. Day 11 step one completed." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solving tasks in progress. Day 11 step one completed." />
+    <MESSAGE value="Solving tasks in progress. Day 11 step one completed. Step 2 stuck.&#10;&#10;Should be used different method to manage &quot;worry level&quot;. BigInteger is not enough." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solving tasks in progress. Day 11 step one completed. Step 2 stuck.&#10;&#10;Should be used different method to manage &quot;worry level&quot;. BigInteger is not enough." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -257,6 +272,11 @@
           <line>76</line>
           <option name="timeStamp" value="92" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/day12_hill_climbing/Main.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="110" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/day02/Main.java</url>
           <line>22</line>
@@ -310,6 +330,7 @@
       <configuration name="GradleRunConfiguration">
         <watch expression="itemsWorryLevelsAsInts" language="JAVA" />
         <watch expression="monkeyManger" language="JAVA" />
+        <watch expression="nodes" />
       </configuration>
     </watches-manager>
   </component>
