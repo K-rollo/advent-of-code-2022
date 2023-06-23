@@ -3,6 +3,7 @@ package day12_hill_climbing.graph;
 
 import day12_hill_climbing.map.MapTransformationManager;
 import day12_hill_climbing.map.NodeOnMap;
+import day12_hill_climbing.map.Status;
 
 import java.util.*;
 
@@ -17,7 +18,6 @@ public class GraphManager {
     private int maxHeight = 0;
     private int dimentionX;
     private int dimentionY;
-    ConnectionsManager connectionsManager;
 
     MapTransformationManager mapTransformationManager = new MapTransformationManager(PATH);
 
@@ -73,36 +73,49 @@ public class GraphManager {
         return nodes.stream()
                 .filter(nd -> nd.x() == x)
                 .filter(nd -> nd.y() == y)
-                .findFirst().orElse(new NodeOnMap(0,0,0,0));
+                .findFirst().orElse(new NodeOnMap(0, 0, 0, 0));
 
     }
 
-    public List<NodesConnection> getNodesConnections() {
-        this.connectionsManager = new ConnectionsManager(nodes);
-        return connectionsManager.getConnections();
-    }
 
-    //TODO
-    public Set<NodeOnMap> breadthFirstTraversal() {
-        Set<NodeOnMap> visited = new LinkedHashSet<NodeOnMap>();
-        Queue<NodeOnMap> queue = new LinkedList<NodeOnMap>();
+    public void breadthFirstTraversal() {
+        Queue<NodeOnMap> queue = new LinkedList<>();
         queue.add(startPoint);
-        visited.add(startPoint);
-        int counter = 0;
+        startPoint.setStatus(Status.VISITED);
         while (!queue.isEmpty()) {
-            counter++;
             NodeOnMap currentNode = queue.poll();
             for (NodeOnMap node : currentNode.getAdjoiningNodesList()) {
-                if (!visited.contains(node)) {
-                    node.setStepsToAchieve(counter);
-                    visited.add(node);
+                if (!node.getStatus().equals(Status.VISITED)) {
+                    node.setStatus(Status.VISITED);
+                    node.setPathToGetThisNode(currentNode.getPathToGetThisNode(), currentNode);
                     queue.add(node);
                 }
             }
         }
-        return visited;
     }
 
+    public int getShortestPathFromLowestElevation() {
+        List<Integer> steps = new ArrayList<>();
+        int shortestAmountOfMoves = nodes.size();
 
+        getNodes(); // clears status
+        findNodeByXY(0, 20).updateHeight(1);
 
+        for (NodeOnMap node : nodes) {
+            if (node.height() == 1) {
+                for (NodeOnMap nodeToClear : nodes) {
+                    nodeToClear.setStatus(Status.NOT_VISITED);
+                    nodeToClear.clearPathToGetThisNode();
+                }
+                startPoint = node;
+                breadthFirstTraversal();
+                if ( (endPoint.getPathToGetThisNode().size() < shortestAmountOfMoves)  && (endPoint.getPathToGetThisNode().size() > 0) ){
+                    shortestAmountOfMoves = endPoint.getPathToGetThisNode().size();
+                }
+ //               int stepsToTheTopFromStartPoint = endPoint.getPathToGetThisNode().size();
+//                steps.add(stepsToTheTopFromStartPoint);
+            }
+        }
+        return shortestAmountOfMoves;
+    }
 }

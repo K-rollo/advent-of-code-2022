@@ -8,11 +8,9 @@ public class NodeOnMap {
     private final int number;
     private final int x;
     private final int y;
-    private final int height;
+    private int height;
     private List<NodeOnMap> adjoiningNodesList = new ArrayList<>();
-
-    private int stepsToAchieve;
-
+    private List<NodeOnMap> pathToGetThisNode = new ArrayList<>();
 
     private Status status = Status.NOT_VISITED;
 
@@ -23,9 +21,11 @@ public class NodeOnMap {
         this.height = height;
     }
 
-    double getDistanceToTop(int topX, int topY){
-        return Math.sqrt((double)(topX*topX) + (double)(topY*topY) );
-    };
+    double getDistanceToTop(int topX, int topY) {
+        return Math.sqrt((double) (topX * topX) + (double) (topY * topY));
+    }
+
+    ;
 
 
     public int number() {
@@ -44,6 +44,10 @@ public class NodeOnMap {
         return height;
     }
 
+    public void updateHeight(int newHeight) {
+        this.height = newHeight;
+    }
+
     public List<NodeOnMap> getAdjoiningNodesList() {
         return adjoiningNodesList;
     }
@@ -56,11 +60,15 @@ public class NodeOnMap {
         this.status = status;
     }
 
-    public void setStepsToAchieve(int stepsToAchieve){
-        this.stepsToAchieve = stepsToAchieve;
+    public List<NodeOnMap> getPathToGetThisNode() {
+        return pathToGetThisNode;
+    }
+    public void clearPathToGetThisNode(){
+        pathToGetThisNode.clear();
     }
 
-    public int getStepsToAchieve(){
-        return stepsToAchieve;
+    public void setPathToGetThisNode(List<NodeOnMap> pathToPreviousNode, NodeOnMap previousNode) {
+        pathToGetThisNode.addAll(pathToPreviousNode);
+        pathToGetThisNode.add(previousNode);
     }
 }

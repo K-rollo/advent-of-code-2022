@@ -5,18 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca6cee92-0316-4b58-a7b1-c22b2d9b53eb" name="Changes" comment="Solving tasks in progress. Day 11 step one completed. Step 2 stuck.&#10;&#10;Should be used different method to manage &quot;worry level&quot;. BigInteger is not enough.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/day12_hill_climbing/Climber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day12_hill_climbing/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day12_hill_climbing/graph/ConnectionsManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day12_hill_climbing/graph/GraphManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day12_hill_climbing/graph/NodesConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day12_hill_climbing/map/MapTransformationManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day12_hill_climbing/map/NodeOnMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day12_hill_climbing/map/Status.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day12_hill_climbing/preparation/CharacterDecryptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day12_hill_climbing/preparation/DataFileReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/day-12-input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day13/DataFileReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day13/main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/day-13-input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day12_hill_climbing/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day12_hill_climbing/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day12_hill_climbing/graph/ConnectionsManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day12_hill_climbing/graph/GraphManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day12_hill_climbing/graph/GraphManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day12_hill_climbing/graph/NodesConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day12_hill_climbing/map/NodeOnMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day12_hill_climbing/map/NodeOnMap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,8 +30,8 @@
       <list>
         <option value="Interface" />
         <option value="Record" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -71,7 +68,7 @@
       <recent name="C:\Users\Karol\IdeaProjects\_2023_trainings_and_projects\advent-of-code\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.day07.Main">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="day12_hill_climbing.Main" />
       <module name="advent-of-code.main" />
@@ -197,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687434955241</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Solving tasks in progress. Day 11 step one completed. Step 2 stuck.&#10;&#10;Should be used different method to manage &quot;worry level&quot;. BigInteger is not enough.">
+      <created>1687479718986</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1687479718986</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -273,9 +277,9 @@
           <option name="timeStamp" value="92" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/day12_hill_climbing/Main.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="110" />
+          <url>file://$PROJECT_DIR$/src/main/java/day12_hill_climbing/graph/GraphManager.java</url>
+          <line>118</line>
+          <option name="timeStamp" value="123" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/day02/Main.java</url>
@@ -331,6 +335,7 @@
         <watch expression="itemsWorryLevelsAsInts" language="JAVA" />
         <watch expression="monkeyManger" language="JAVA" />
         <watch expression="nodes" />
+        <watch expression="graphManager.startPoint" />
       </configuration>
     </watches-manager>
   </component>

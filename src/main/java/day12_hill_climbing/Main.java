@@ -10,10 +10,12 @@ public class Main {
         GraphManager graphManager = new GraphManager();
         var nodes = graphManager.getNodes();
         graphManager.fillAdjoiningNodes();
-        var connections = graphManager.getNodesConnections();
-        System.out.println(nodes.get(1928).height());
-        var setOfNodes = graphManager.breadthFirstTraversal();
-        System.out.println(nodes.get(1928).getStepsToAchieve());
+
+ //       graphManager.breadthFirstTraversal();
+        System.out.println(nodes.get(1928).getPathToGetThisNode().size());
+
+        var steps = graphManager.getShortestPathFromLowestElevation();
+        System.out.println(steps);
 
     }
 }
