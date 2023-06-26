@@ -1,4 +1,4 @@
-package day15;
+package day15_sensors_and_beacons;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -37,28 +37,28 @@ public class DataFileReader {
                 var beaconX = Integer.valueOf(readLine.substring(startBeaconX + 2, endBeaconX));
                 var beaconY = Integer.valueOf(readLine.substring(startBeaconY + 2));
 
-                listOfSensors.add(new Sensor(sensorX, sensorY, beaconX, beaconY, Math.abs(sensorX - beaconX), Math.abs(sensorY - beaconY)));
+                listOfSensors.add(new Sensor(new Location(sensorX, sensorY), new Location(beaconX, beaconY), Math.abs(sensorX - beaconX), Math.abs(sensorY - beaconY)));
             }
             fileReader.close();
 
             minX = listOfSensors.stream()
-                    .map(sensor -> sensor.x() - (sensor.deltaX() + sensor.deltaY()))
+                    .map(sensor -> sensor.locationXY().x() - (sensor.deltaX() + sensor.deltaY()))
                     .min(Integer::compare)
                     .orElse(-1);
 
 
             maxX = listOfSensors.stream()
-                    .map(sensor -> sensor.x() + (sensor.deltaX() + sensor.deltaY()))
+                    .map(sensor -> sensor.locationXY().x() + (sensor.deltaX() + sensor.deltaY()))
                     .max(Integer::compare)
                     .orElse(-1);
 
             minY = listOfSensors.stream()
-                    .map(sensor -> sensor.y() - (sensor.deltaX() + sensor.deltaY()))
+                    .map(sensor -> sensor.locationXY().y() - (sensor.deltaX() + sensor.deltaY()))
                     .min(Integer::compare)
                     .orElse(-1);
 
             maxY = listOfSensors.stream()
-                    .map(sensor -> sensor.y() + (sensor.deltaX() + sensor.deltaY()))
+                    .map(sensor -> sensor.locationXY().y() + (sensor.deltaX() + sensor.deltaY()))
                     .max(Integer::compare)
                     .orElse(-1);
 

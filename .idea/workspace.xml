@@ -4,28 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca6cee92-0316-4b58-a7b1-c22b2d9b53eb" name="Changes" comment="Solving tasks in progress. Day 12 completed.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/day13/DataFileReaderBis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day13/StringSeparationAndAggregationManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day13/StringWithAggregationLevel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day14_falling_sand/DataFileReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day14_falling_sand/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day14_falling_sand/PointInCave.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day14_falling_sand/Sand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day14_falling_sand/SandFallingManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day14_falling_sand/Status.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day14_falling_sand/ViewManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day15/DataFileReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day15/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day15/MatrixManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day15/PointInCave.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day15/Sensor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day15/Status.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/day-14-input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/day-15-input.txt" afterDir="false" />
+    <list default="true" id="ca6cee92-0316-4b58-a7b1-c22b2d9b53eb" name="Changes" comment="Solving tasks in progress. Day 14 completed.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/day15/Location.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day15/Range.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day13/DataFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day13/DataFileReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day13/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day13/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day15/DataFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day15/DataFileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day15/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day15/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day15/MatrixManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day15/MatrixManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day15/PointInCave.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day15/Sensor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day15/Sensor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day15/Status.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/day-15-input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/day-15-input.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +31,8 @@
       <list>
         <option value="Interface" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="Record" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -83,7 +72,7 @@
       <recent name="day15" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.day15.Main">
+  <component name="RunManager" selected="Application.day15_sensors_and_beacons.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="day13.Main" />
       <module name="advent-of-code.main" />
@@ -136,12 +125,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="day15.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day15.Main" />
+    <configuration name="day15_sensors_and_beacons.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day15_sensors_and_beacons.Main" />
       <module name="advent-of-code.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day15.*" />
+          <option name="PATTERN" value="day15_sensors_and_beacons.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -151,9 +140,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.day15.Main" />
+        <item itemvalue="Application.day15_sensors_and_beacons.Main" />
         <item itemvalue="Application.day14_falling_sand.Main" />
-        <item itemvalue="Application.day13.Main" />
         <item itemvalue="Application.day11_monkey_business.Main" />
         <item itemvalue="Application.day09.Main" />
       </list>
@@ -224,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687513655373</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Solving tasks in progress. Day 14 completed.">
+      <created>1687738027179</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1687738027179</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -245,7 +240,8 @@
     <MESSAGE value="Solving tasks in progress. Day 11 step one completed." />
     <MESSAGE value="Solving tasks in progress. Day 11 step one completed. Step 2 stuck.&#10;&#10;Should be used different method to manage &quot;worry level&quot;. BigInteger is not enough." />
     <MESSAGE value="Solving tasks in progress. Day 12 completed." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solving tasks in progress. Day 12 completed." />
+    <MESSAGE value="Solving tasks in progress. Day 14 completed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solving tasks in progress. Day 14 completed." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -316,14 +312,9 @@
           <option name="timeStamp" value="152" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/day15/MatrixManager.java</url>
-          <line>51</line>
-          <option name="timeStamp" value="162" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/day15/MatrixManager.java</url>
-          <line>93</line>
-          <option name="timeStamp" value="164" />
+          <url>file://$PROJECT_DIR$/src/main/java/day15/Main.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="188" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/day02/Main.java</url>
