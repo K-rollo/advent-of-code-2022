@@ -4,16 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca6cee92-0316-4b58-a7b1-c22b2d9b53eb" name="Changes" comment="Solving tasks in progress. Day 11 step one completed. Step 2 stuck.&#10;&#10;Should be used different method to manage &quot;worry level&quot;. BigInteger is not enough.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/day13/DataFileReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day13/main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/day-13-input.txt" afterDir="false" />
+    <list default="true" id="ca6cee92-0316-4b58-a7b1-c22b2d9b53eb" name="Changes" comment="Solving tasks in progress. Day 12 completed.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/day13/DataFileReaderBis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day13/StringSeparationAndAggregationManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day13/StringWithAggregationLevel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day14_falling_sand/DataFileReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day14_falling_sand/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day14_falling_sand/PointInCave.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day14_falling_sand/Sand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day14_falling_sand/SandFallingManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day14_falling_sand/Status.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day14_falling_sand/ViewManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day15/DataFileReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day15/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day15/MatrixManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day15/PointInCave.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day15/Sensor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day15/Status.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/day-14-input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/day-15-input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day12_hill_climbing/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day12_hill_climbing/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day12_hill_climbing/graph/ConnectionsManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day12_hill_climbing/graph/GraphManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day12_hill_climbing/graph/GraphManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day12_hill_climbing/graph/NodesConnection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day12_hill_climbing/map/NodeOnMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day12_hill_climbing/map/NodeOnMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day13/DataFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day13/DataFileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day13/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day13/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,9 +41,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Record" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="Record" />
       </list>
     </option>
   </component>
@@ -67,40 +79,17 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Karol\IdeaProjects\_2023_trainings_and_projects\advent-of-code\src\main\resources" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="day15" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.day15.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day12_hill_climbing.Main" />
+      <option name="MAIN_CLASS_NAME" value="day13.Main" />
       <module name="advent-of-code.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day12_hill_climbing.map.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="day07.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day07.Main" />
-      <module name="advent-of-code.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day07.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="day08.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day08.Main" />
-      <module name="advent-of-code.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day08.*" />
+          <option name="PATTERN" value="day13.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,12 +123,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="day14_falling_sand.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day14_falling_sand.Main" />
+      <module name="advent-of-code.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day14_falling_sand.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="day15.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day15.Main" />
+      <module name="advent-of-code.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day15.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.day15.Main" />
+        <item itemvalue="Application.day14_falling_sand.Main" />
+        <item itemvalue="Application.day13.Main" />
         <item itemvalue="Application.day11_monkey_business.Main" />
         <item itemvalue="Application.day09.Main" />
-        <item itemvalue="Application.day08.Main" />
-        <item itemvalue="Application.day07.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -201,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687479718986</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Solving tasks in progress. Day 12 completed.">
+      <created>1687513655373</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1687513655373</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -221,7 +244,8 @@
     <MESSAGE value="Solving tasks in progress. Day 6 completed. Day 7 gives wrong result." />
     <MESSAGE value="Solving tasks in progress. Day 11 step one completed." />
     <MESSAGE value="Solving tasks in progress. Day 11 step one completed. Step 2 stuck.&#10;&#10;Should be used different method to manage &quot;worry level&quot;. BigInteger is not enough." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solving tasks in progress. Day 11 step one completed. Step 2 stuck.&#10;&#10;Should be used different method to manage &quot;worry level&quot;. BigInteger is not enough." />
+    <MESSAGE value="Solving tasks in progress. Day 12 completed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solving tasks in progress. Day 12 completed." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -281,6 +305,26 @@
           <line>118</line>
           <option name="timeStamp" value="123" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/day13/Main.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="132" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/day14_falling_sand/ViewManager.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="152" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/day15/MatrixManager.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="162" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/day15/MatrixManager.java</url>
+          <line>93</line>
+          <option name="timeStamp" value="164" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/day02/Main.java</url>
           <line>22</line>
@@ -338,5 +382,13 @@
         <watch expression="graphManager.startPoint" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/advent_of_code$day14_Main.ic" NAME="day14.Main Coverage Results" MODIFIED="1687557305915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>day14.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/advent_of_code$day13_Main.ic" NAME="day13.Main Coverage Results" MODIFIED="1687517071882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>day13.*</FILTER>
+    </SUITE>
   </component>
 </project>
